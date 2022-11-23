@@ -1,3 +1,4 @@
+import { Button } from "@components";
 import { Link as ScrollLink } from "react-scroll";
 import { useState } from "react";
 import Link from "next/link";
@@ -9,13 +10,11 @@ export interface NavbarRoute {
 }
 
 const routes = [
-  { page: "crosswords", href: "#crosswords", isSamePage: true },
-  { page: "certifications", href: "#certifications", isSamePage: true },
-  { page: "portfolio", href: "https://mhmdsami.xyz" },
+  { page: "crosswords", href: "crosswords", isSamePage: true },
+  { page: "certifications", href: "certifications", isSamePage: true },
   { page: "blog", href: "https://blog.mhmdsami.xyz" },
-  { page: "github", href: "https://github.com/sm-sami" },
+  { page: "portfolio", href: "https://mhmdsami.xyz" },
 ];
-
 
 const Navbar = () => {
   const [isNavToggled, setNavToggled] = useState<boolean>(false);
@@ -39,6 +38,12 @@ const Navbar = () => {
             )}
           </li>
         ))}
+        <Button
+          href="/assets/DSA-eLab-Report-022.pdf"
+          download="DSA-eLab-Report-022.pdf"
+        >
+          eLab report
+        </Button>
       </>
     );
   };

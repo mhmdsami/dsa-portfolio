@@ -10,7 +10,7 @@ module.exports = {
         body: ["DM Sans", "sans-serif"],
       },
       colors: {
-        black: "#252525",
+        black: "#181817",
         yellow: "#FFD369",
         white: "#EEEEEE",
       },

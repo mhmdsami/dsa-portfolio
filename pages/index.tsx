@@ -1,5 +1,4 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
+import { Navbar, Hero, Crossword, Certificate, Footer } from "@components";
 import { Slide } from "react-awesome-reveal";
 
 export default function Home() {
@@ -9,6 +8,9 @@ export default function Home() {
         <Navbar />
         <Hero />
       </Slide>
+      <Crossword />
+      <Certificate />
+      <Footer />
     </div>
   );
 }
